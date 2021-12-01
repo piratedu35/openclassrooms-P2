@@ -1,0 +1,33 @@
+body{
+    font-family: "raleway", sans-serif;
+    margin: 0 55px 0 55px;
+}
+/*header*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    height: 40px;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+nav li{
+    margin: 0px 20px 0px 20px;
+    padding: 52px 0 0 0;
+
+}
+
+
+nav li:hover{
+    color: rgb(57, 158, 241);    
+    border-top: rgb(57, 158, 241) solid 2px;
+}
