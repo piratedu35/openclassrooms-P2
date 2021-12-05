@@ -22,12 +22,120 @@ nav ul{
 
 nav li{
     margin: 0px 20px 0px 20px;
-    padding: 52px 0 0 0;
+    padding: 52px 0 10px 0;
 
 }
-
 
 nav li:hover{
     color: rgb(57, 158, 241);    
     border-top: rgb(57, 158, 241) solid 2px;
 }
+
+/*main*/
+h1{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+#recherche{
+    display: flex;
+    width: 415px;
+    height: 46px;
+    background: white;
+    border-radius: 15px;
+}
+
+#recherche img{
+    margin-top: 16px;
+    width: 20px;
+    height: 20px;
+    padding: 14px;
+    border-radius: 15px 0 0 15px;
+    background: rgb(238, 240, 241);
+}
+
+
+#marseille{
+    height: 46px;
+    width: 200px;
+    border: solid 1px rgb(238, 240, 241);
+    border-right: none;
+    font-weight: 700;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+}
+
+
+#bouton{
+    width: 130px;
+    height: 48px;
+    background: rgb(78, 125, 255);
+   
+    border-radius: 0 15px 15px 0;
+    border: none; 
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/*filtres*/
+
+h3{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#filtres{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 50px;
+    margin-top: 45px;
+}
+
+.filtres{
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: solid 2px rgb(238, 240, 241);
+    border-radius: 25px;
+    border-left: none;
+}
+
+.background_filtres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(232, 240, 255);
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+}
+
+.filtres a{
+    text-decoration: none;
+    padding: 18px ;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+/*information*/
+
+#information{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#information img{
+    margin-right: 10px;
+}
+
+#information p{
+    font-size: 15px;
+}
+
