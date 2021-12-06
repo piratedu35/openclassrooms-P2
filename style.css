@@ -71,7 +71,6 @@ h1{
     width: 130px;
     height: 48px;
     background: rgb(78, 125, 255);
-   
     border-radius: 0 15px 15px 0;
     border: none; 
     font-size: 16px;
@@ -139,3 +138,75 @@ h3{
     font-size: 15px;
 }
 
+/*cards*/
+#section_cards{
+    display: flex;
+}
+
+
+.contener_cards_gauche{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#section_cards h2{
+    margin: 50px 0 0 60px;
+    font-size: 25px;
+}
+
+#cards_gauche{
+    width: 66%;
+    height: auto;
+    background: rgb(238, 240, 241);
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.card{
+    width: 270px;
+    height: 270px;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.card_image{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    margin: 1px;
+}
+
+#afficher_plus{
+    margin-left:  60px;
+}
+
+/*aside*/
+
+aside{
+    width: 30%;
+    height: 768px;
+    background: rgb(238, 240, 241);
+    border-radius: 20px;
+}
+
+#entete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_graphic{
+    margin-top: 38px;
+    margin-right: 44px;
+}
+
+.card_corp_droit{
+    margin-left: 50px;
+}
+
+.card_image_droit{
+    width: 30%;
+}
