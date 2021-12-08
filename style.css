@@ -1,8 +1,19 @@
 body{
     font-family: "raleway", sans-serif;
     margin: 0 55px 0 55px;
+    max-width: 1400px;
 }
 /*header*/
+h1{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -23,20 +34,15 @@ nav ul{
 nav li{
     margin: 0px 20px 0px 20px;
     padding: 52px 0 10px 0;
-
+    border: transparent solid 2px;
 }
 
 nav li:hover{
-    color: rgb(57, 158, 241);    
-    border-top: rgb(57, 158, 241) solid 2px;
+    color: #0065FC;    
+    border-top: #0065FC solid 2px;
 }
 
 /*main*/
-h1{
-    font-size: 21px;
-    font-weight: 700;
-}
-
 
 #recherche{
     display: flex;
@@ -52,25 +58,23 @@ h1{
     height: 20px;
     padding: 14px;
     border-radius: 15px 0 0 15px;
-    background: rgb(238, 240, 241);
+    background: #F2F2F2;
 }
-
 
 #marseille{
     height: 46px;
     width: 200px;
-    border: solid 1px rgb(238, 240, 241);
+    border: solid 1px #F2F2F2;
     border-right: none;
     font-weight: 700;
     padding: 0 0 0 15px;
     font-size: 18px;
 }
 
-
 #bouton{
     width: 130px;
     height: 48px;
-    background: rgb(78, 125, 255);
+    background: #0065FC;
     border-radius: 0 15px 15px 0;
     border: none; 
     font-size: 16px;
@@ -79,11 +83,6 @@ h1{
 }
 
 /*filtres*/
-
-h3{
-    font-size: 16px;
-    margin-right: 10px;
-}
 
 #filtres{
     display: flex;
@@ -99,7 +98,7 @@ h3{
     height: 40px;
     display: flex;
     align-items: center;
-    border: solid 2px rgb(238, 240, 241);
+    border: solid 2px #F2F2F2;
     border-radius: 25px;
     border-left: none;
 }
@@ -108,7 +107,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(232, 240, 255);
+    background: #DEEBFF;
     width: 44px;
     height: 44px;
     border-radius: 25px;
@@ -142,41 +141,51 @@ h3{
 #section_cards{
     display: flex;
 }
-
-
-.contener_cards_gauche{
+#section_cards a{
+    text-decoration: none;
+    color: black;
+}
+.container_cards_gauche{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #section_cards h2{
-    margin: 50px 0 0 60px;
-    font-size: 25px;
+    margin: 50px 0 0 35px;
+    font-size: 20px;
 }
 
 #cards_gauche{
     width: 66%;
-    height: auto;
-    background: rgb(238, 240, 241);
+    height: 640px;
+    background: #F2F2F2;
     border-radius: 20px;
     margin-right: 50px;
 }
 
 .card{
-    width: 270px;
-    height: 270px;
+    width: 220px;
+    height: auto;
     background: white;
     border-radius: 20px;
     padding: 5px;
     margin: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206);
+}
+
+.card_corp h3{
+    font-size: 14px;
+}
+
+.card_corp p{
+    font-size: 10px;
 }
 
 .card_image{
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
-    margin: 1px;
 }
 
 #afficher_plus{
@@ -187,26 +196,107 @@ h3{
 
 aside{
     width: 30%;
-    height: 768px;
-    background: rgb(238, 240, 241);
+    height: 640px;
+    background: #F2F2F2;
     border-radius: 20px;
 }
 
 #entete{
+    margin: 50px 0 20px 0;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#entete h2{
+    margin: 0;
+}
+
+#container_card_droit{
+    width: 80%;
+    height: 80%;
+    margin-left: 33px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo_graphic{
-    margin-top: 38px;
-    margin-right: 44px;
-}
-
-.card_corp_droit{
-    margin-left: 50px;
+.card_droit{
+    display: flex;    
+    background: white;
+    border-radius: 18px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206);
 }
 
 .card_image_droit{
-    width: 30%;
+    width: 115px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
 }
+
+/*activites a marseille*/
+
+#container_carte_basse{
+    width: 1400px;
+    height: 600px;
+    background: #F2F2F2;
+}
+
+#titre_carte_basse{
+    width: 100%;
+    height: auto;
+}
+
+#cartes_basse{
+    display: flex;
+}
+
+#vieux_port img{
+    width: 320px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+
+#paumegues img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#iles_du_frioul img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#calanques img{
+    width: 320px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#notre-dame img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#parc-longchamp img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
