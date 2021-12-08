@@ -14,6 +14,10 @@ h3{
     margin-right: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -245,7 +249,6 @@ aside{
 #container_carte_basse{
     width: 1400px;
     height: 600px;
-    background: #F2F2F2;
 }
 
 #titre_carte_basse{
@@ -255,19 +258,42 @@ aside{
 
 #cartes_basse{
     display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#cartes_basse h3{
+    margin: 10px;
+}
+
+
+#vieux_port{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
 
 #vieux_port img{
     width: 320px;
     height: 480px;
+    border-radius: 20px 20px 0 0;
+}
+
+#paumegues{
+    background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
 
-
 #paumegues img{
     width: 280px;
     height: 200px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#iles_du_frioul{
+    background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
@@ -275,6 +301,12 @@ aside{
 #iles_du_frioul img{
     width: 280px;
     height: 200px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#calanques{
+    background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
@@ -282,6 +314,12 @@ aside{
 #calanques img{
     width: 320px;
     height: 480px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#notre-dame{
+    background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
@@ -289,6 +327,12 @@ aside{
 #notre-dame img{
     width: 280px;
     height: 200px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 2px 5px rgb(206, 206, 206)
+}
+
+#parc-longchamp{
+    background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
@@ -296,7 +340,7 @@ aside{
 #parc-longchamp img{
     width: 280px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
 
