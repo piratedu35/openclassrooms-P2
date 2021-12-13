@@ -164,6 +164,7 @@ form{
     width: 850px;
     height: 610px;
     background: #F2F2F2;
+    margin-right: 30px;
     border-radius: 20px;
 }
 
@@ -182,11 +183,26 @@ form{
 }
 
 .card_image{
-    width: 220px;
-    height: 100px;
+    width: 240px;
+    height: 120px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
+
+.card_corp{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1px 5px;
+}
+
+.card_corp p{
+    margin: 0;
+}
+
+.card_corp img{
+    margin-bottom: 1px;
+}
+
 
 #afficher_plus{
     margin: 0 0 30px 30px;
@@ -199,35 +215,37 @@ aside{
     background: #F2F2F2;
     border-radius: 20px;
     width: 410px;
-    height: 640px;
+    height: 610px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #entete{
-    margin: 40px 25px 0 25px;
+    width: 320px;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-#entete h2{
-    margin: 0;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 #container_card_droit{
-
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card_droit{
+    width: 320px;
     display: flex;    
     background: white;
     border-radius: 18px;
     padding: 5px;
-    display: flex;
-    justify-content: space-between;
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
+    margin-bottom: 30px;
 }
 
 .card_image_droit{
