@@ -1,12 +1,16 @@
 body{
     font-family: "raleway", sans-serif;
-    margin: 0 55px 0 55px;
-    max-width: 1400px;
+    margin: 0;
 }
 /*header*/
+header{
+    max-width: 1400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 h1{
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 h3{
@@ -18,10 +22,16 @@ a{
     text-decoration: none;
     color: black;
 }
+
+p{
+    font-size: 14px;
+    font-weight: 500;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 25px 0 0;
 }
 
 nav img{
@@ -48,41 +58,31 @@ nav li:hover{
 
 /*main*/
 
-#recherche{
+/*bouton recherche*/
+form{
+    width: 410px;
+    height: 50px;
     display: flex;
-    width: 415px;
-    height: 46px;
-    background: white;
-    border-radius: 15px;
-}
-
-#recherche img{
-    margin-top: 16px;
-    width: 20px;
-    height: 20px;
-    padding: 14px;
-    border-radius: 15px 0 0 15px;
+    align-items: center;
     background: #F2F2F2;
+    border-radius: 20px;
+}
+.svg-inline--fa{
+    margin: 20px;
 }
 
-#marseille{
+#marseille_france{
     height: 46px;
-    width: 200px;
-    border: solid 1px #F2F2F2;
-    border-right: none;
-    font-weight: 700;
-    padding: 0 0 0 15px;
-    font-size: 18px;
+    width: 230px;
+    border: #F2F2F2 solid 1px;
 }
 
-#bouton{
-    width: 130px;
-    height: 48px;
+#rechercher{
     background: #0065FC;
-    border-radius: 0 15px 15px 0;
-    border: none; 
-    font-size: 16px;
-    font-weight: 700;
+    border: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
     color: white;
 }
 
@@ -93,8 +93,11 @@ nav li:hover{
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    height: 50px;
-    margin-top: 45px;
+    margin: 20px 0 20px 0;
+}
+
+#filtres h3{
+    margin: 0 20px 0 0;
 }
 
 .filtres{
@@ -119,9 +122,9 @@ nav li:hover{
 
 .filtres a{
     text-decoration: none;
-    padding: 18px ;
-    font-size: 18px;
-    font-weight: 700;
+    padding: 10px 22px 10px 10px ;
+    font-size: 16px;
+    font-weight: 800;
     color: black;
 }
 
@@ -130,7 +133,6 @@ nav li:hover{
 #information{
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 #information img{
@@ -142,75 +144,72 @@ nav li:hover{
 }
 
 /*cards*/
+
+#container_cards_gauche{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 #section_cards{
     display: flex;
 }
-#section_cards a{
-    text-decoration: none;
-    color: black;
-}
-.container_cards_gauche{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-#section_cards h2{
-    margin: 50px 0 0 35px;
-    font-size: 20px;
+
+#container_cards_gauche h3{
+    margin: 0px;
 }
 
 #cards_gauche{
-    width: 66%;
-    height: 640px;
+    width: 850px;
+    height: 610px;
     background: #F2F2F2;
     border-radius: 20px;
-    margin-right: 50px;
+}
+
+#cards_gauche h2{
+    margin: 40px 0 20px 30px;
 }
 
 .card{
-    width: 220px;
-    height: auto;
+    width: 240px;
+    height: 195px;
     background: white;
     border-radius: 20px;
+    margin-bottom: 30px;
     padding: 5px;
-    margin: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
 }
 
-.card_corp h3{
-    font-size: 14px;
-}
-
-.card_corp p{
-    font-size: 10px;
-}
-
 .card_image{
-    width: 100%;
-    height: auto;
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 #afficher_plus{
-    margin-left:  60px;
+    margin: 0 0 30px 30px;
 }
+
 
 /*aside*/
 
 aside{
-    width: 30%;
-    height: 640px;
     background: #F2F2F2;
     border-radius: 20px;
+    width: 410px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #entete{
-    margin: 50px 0 20px 0;
-    width: 100%;
+    margin: 40px 25px 0 25px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #entete h2{
@@ -218,13 +217,7 @@ aside{
 }
 
 #container_card_droit{
-    width: 80%;
-    height: 80%;
-    margin-left: 33px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
 .card_droit{
@@ -247,8 +240,8 @@ aside{
 /*activites a marseille*/
 
 #container_carte_basse{
-    width: 1400px;
-    height: 600px;
+
+    margin: 0 55px 0 55px;
 }
 
 #titre_carte_basse{
@@ -344,3 +337,25 @@ aside{
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
 
+/*footer*/
+
+footer{
+    display: flex;
+    background: #F2F2F2;
+    width: 1349px;
+    height: auto;
+}
+
+.lien_footer{
+    width: 33%;
+    margin: 30px;
+    line-height: 1.5;
+}
+
+footer ul{
+    padding: 0px;
+}
+
+footer li{
+    list-style: none;
+}
