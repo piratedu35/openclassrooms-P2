@@ -20,23 +20,25 @@
     <header>
         <nav>
             <img src="images/logo/Booki@3x.png" alt="logo booki">
-            <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
-            </ul>
+            <p id="liens_en_tete">
+                <a href="#ancre_hebergements">Hébergements</a>
+                <a href="#ancre_activites">Activités</a>
+            </p>
         </nav>
-<!--main-->
+<!--h1 et p-->
         <main>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <p class="en_plein_centre">En plein centre ville ou en pleine nature</p>
+
 <!--bouton recherche--> 
             <form action="#" method="post">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>
-                    <input id="marseille_france" type="text" placeholder="Marseille, France" >
+                    <input id="marseille_france" type="text" placeholder="Marseille, France">
                 </p>
                 <input id="rechercher" type="submit" value="Rechercher" >
             </form>
+
 <!--filtres-->        
             <div id="filtres">
                 <h3>Filtres</h3>
@@ -73,15 +75,14 @@
 <!--card-->
         <section id="section_cards">           
             <div id="cards_gauche">
-                <h2>Hébergements à Marseille</h2>
+                <h2 id="ancre_hebergements">Hébergements à Marseille</h2>
                 <div id="container_cards_gauche">
                     <div class="card">
-                        <a href="#">
-                            <img class="card_image" src="images/hebergements/2_large/auberge_la_cannebiere.jpg" alt="photo auberge la cannebiere">
+                        <a href="#">                               <img class="card_image" src="images/hebergements/2_large/auberge_la_cannebiere.jpg" alt="photo auberge la cannebiere">
                             <div class="card_corp">
                                 <h3>Auberge La Cannebière</h3>
                                 <p>Nuit a partir de 25€</p>
-                                <img src="images/logo/4etoiles.png" alt="4 étoiles" width="60px">
+                                <img src="images/logo/4etoiles.png" alt="4 étoiles">
                             </div>
                         </a>
                     </div>
@@ -239,7 +240,7 @@
 <!--carte basse-->
         <section id="container_carte_basse">
             <div id="titre_carte_basse">
-                <h2>Activités à Marseille</h2>
+                <h2 id="ancre_activites">Activités à Marseille</h2>
             </div>
             <div id="cartes_basse">
                 <div id="vieux_port">
