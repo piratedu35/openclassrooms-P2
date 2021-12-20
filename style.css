@@ -5,7 +5,6 @@ body{
 }
 /*header*/
 header{
-    width: 1300px;
     margin: 0 50px 50px 50px;
 }
 h1{
@@ -466,3 +465,17 @@ footer ul{
 footer li{
     list-style: none;
 }
+
+/*media Queries*/
+
+@media screen and (max-width: 768px) {
+    nav{
+        flex-direction: column;
+    }
+    nav img{
+        width: 100%;  
+    }
+    #liens_en_tete a:hover{
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+    }
