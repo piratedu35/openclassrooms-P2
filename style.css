@@ -1,15 +1,17 @@
 body{
     font-family: "raleway", sans-serif;
-    margin: 0;
-
+    align-content: center;
+    margin: 0px;
 }
+
 /*header*/
 header{
-    margin: 0 50px 50px 50px;
+    margin: 0 auto;
+    max-width: 1300px;
+    align-items: center;
 }
 h1{
-    font-size: 22px;
-    font-weight: 800;
+    font-size: 24px;
     margin: 10px 0 15px 0;
 }
 
@@ -28,11 +30,9 @@ p{
     font-weight: 500;
 }
 nav{
-    width: 100%;
     height: 110px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
 }
 
@@ -44,7 +44,6 @@ nav img{
 
 #liens_en_tete{
     width: 270px;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -54,6 +53,7 @@ nav img{
 #liens_en_tete a{
     margin: 0 30px;
     padding-top: 48px;
+    border-top: 1px solid transparent;
 }
 
 
@@ -70,7 +70,7 @@ nav img{
 
 /*bouton recherche*/
 form{
-    width: 410px;
+    width: 290px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -89,24 +89,23 @@ form{
     font-weight: 900;
     padding-left: 15px;
     border: #F2F2F2 solid 1px;
-    
-    
 }
 
 #rechercher{
+    position: relative;
+    right: 10px;
     background: #0065FC;
     border: none;
-    width: 130px;
+    width: 85px;
     height: 50px;
     border-radius: 0 15px 15px 0;
     color: white;
     font-weight: 700;
-/*effet de transition possible---
-    transition: background-color 1s; ---*/
 }
 
 #rechercher:hover{
-    font-size: 20px;
+    background: #DEEBFF;
+    color: blue;
 }
 
 /*filtres*/
@@ -144,17 +143,20 @@ form{
     border-radius: 25px;
 }
 
+.filtres p{
+    margin: 0;
+}
+
 .filtres a{
     text-decoration: none;
     padding: 10px 22px 10px 10px ;
-    font-size: 16px;
     font-weight: 800;
     color: black;
 }
 
-.filtres a:hover{
-    font-size: 24px;
-    color: green;
+.filtres:hover{
+    background: #DEEBFF;
+    border-radius: 20px;
 }
 
 /*information*/
@@ -193,7 +195,6 @@ form{
 
 #cards_gauche{
     width: 850px;
-    height: 610px;
     background: #F2F2F2;
     margin-right: 20px;
     border-radius: 20px;
@@ -213,6 +214,13 @@ form{
     padding: 5px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
 }
+
+.card:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
 
 .card_image{
     width: 240px;
@@ -257,10 +265,11 @@ aside{
     flex-direction: column;
     align-items: center;
     margin: 0 0 0 20px;
+    min-width: 350px;
 }
 
 #entete{
-    width: 320px;
+    width: 80%;
     height: auto;
     display: flex;
     align-items: center;
@@ -270,12 +279,6 @@ aside{
 
 #entete h2{
     font-size: 21px;
-}
-
-#entete svg{
-    margin: 0px;
-    width: 22px;
-    height: auto;
 }
 
 #container_card_droit{
@@ -295,6 +298,13 @@ aside{
     padding: 3px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
     margin-bottom: 30px;
+}
+
+.card_droit:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .card_image_droit{
@@ -322,6 +332,11 @@ aside{
     margin: 30px 0 0 0;
 }
 /*activites a marseille*/
+#container_carte_basse{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #titre_carte_basse{
     width: 100%;
@@ -336,6 +351,7 @@ aside{
     text-decoration: none;
 }
 
+
 #cartes_basse h3{
     margin: 20px;
     font-weight: 800;
@@ -347,10 +363,19 @@ aside{
     background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
+    
 }
 
+#vieux_port:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
+
+
 #vieux_port img{
-    width: 300px;
+    width: 280px;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -362,12 +387,18 @@ aside{
 
 #paumegues{
     height: 235px;
-    width: auto;
     background: white;
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
     margin-bottom: 43px;
 }
+
+#paumegues:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
 
 #paumegues img{
     width: 280px;
@@ -384,6 +415,13 @@ aside{
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
 
+#iles_du_frioul:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
+
 #iles_du_frioul img{
     width: 280px;
     height: 110px;
@@ -398,6 +436,13 @@ aside{
     border-radius: 20px;
     box-shadow: 1px 2px 5px rgb(206, 206, 206)
 }
+
+#calanques:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
 
 #calanques img{
     width: 300px;
@@ -420,6 +465,13 @@ aside{
     margin-bottom: 43px;
 }
 
+#notre-dame:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
+
 #notre-dame img{
     width: 280px;
     height: 140px;
@@ -435,6 +487,13 @@ aside{
     box-shadow: 1px 2px 5px rgb(206, 206, 206);
 }
 
+#parc-longchamp:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: 1s;
+    }
+
 #parc-longchamp img{
     width: 280px;
     height: 140px;
@@ -446,9 +505,11 @@ aside{
 /*footer*/
 
 footer{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     background: #F2F2F2;
-    width: 1400px;
     height: auto;
 }
 
@@ -469,13 +530,255 @@ footer li{
 /*media Queries*/
 
 @media screen and (max-width: 768px) {
-    nav{
-        flex-direction: column;
-    }
-    nav img{
-        width: 100%;  
-    }
-    #liens_en_tete a:hover{
+header{
+        width: 375px;
+        margin: 0 auto;
+        text-align: center;
+}
+
+nav{
+        display: block;
+}
+
+nav img{
+        padding: 15px 0;
+}
+
+#liens_en_tete{
+        width: auto;
+}
+
+#liens_en_tete a{
+        margin: 0px;
+        height: 30px;
+        width: 50%;
+        padding-top: 0;
+        border-bottom: 1px solid #DEEBFF;
+}
+
+#liens_en_tete a:hover{
+        margin: 0;
+        height: 30px;
         border-top: none;
         border-bottom: 1px solid #0065FC;
+}
+main{
+    width: 340px;
+    margin: auto;
+}
+#marseille_france{
+    padding: 0 0 0 15px;
+}
+#rechercher{
+    margin: auto;
+    width: 48px;
+    border-radius: 15px;
+}
+#filtres{
+    flex-wrap: wrap;
+    text-align: start;
+    min-width: 280px;
+    justify-content: start;
+    width: auto;
+}
+#filtres h3{
+    width: 100%;
+}
+.filtres{
+    margin-bottom: 10px;
+}
+#information{
+    text-align: start;
+}
+#information img{
+    margin-bottom: 20px;
+}
+
+#section_cards{
+    flex-direction: column-reverse;
+}
+#cards_gauche{
+    background: none;
+    margin: 0px;
+    width: auto;
+}
+#cards_gauche h2{
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+.card{
+    width: 314px;
+}
+.card_image{
+    width: 315px;
+}
+.card_corp{
+    text-align: start;
+}
+aside{
+    width: auto;
+    margin: 0px;
+    border-radius: 0px;
+}
+.card_corp_droit{
+    text-align: start;
+}
+#afficher_plus{
+    text-align: start;
+}
+
+#titre_carte_basse h2{
+    text-align: start;
+    margin-left: 20px;
+}
+
+#cartes_basse{
+    display: block;
+    margin: 10px;
+}
+
+
+.card:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+}
+
+.card_droit:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+}
+
+#vieux_port:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
     }
+
+#paumegues:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+    }
+
+
+#iles_du_frioul:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+    }
+
+#calanques:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+    }
+
+
+#notre-dame:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+    }
+
+#parc-longchamp:hover{
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Safari 3-8 */
+    transform: none;
+    transition: none;
+    }
+#vieux_port{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#vieux_port img{
+    width: 100%;
+    height: 140px;
+}
+
+#frioul_paumergues {
+    height: 410px;
+}
+
+#paumegues{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#paumegues img{
+    width: 100%;
+    height: 140px;
+}
+
+#iles_du_frioul{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#iles_du_frioul img{
+    width: 100%;
+    height: 140px;
+}
+
+#calanques{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#calanques img{
+    width: 100%;
+    height: 140px;
+}
+
+#notre-dame{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#notre-dame img{
+    width: 100%;
+    height: 140px;
+}
+
+#parc-longchamp{
+    height: 200px;
+    text-align: start;
+    margin: 10px;
+    align-content: center;
+}
+
+#parc-longchamp img{
+    width: 100%;
+    height: 140px;
+}
+
+footer{
+    display: block;
+    padding: 20px;
+}
+
+.lien_footer{
+    width: 100%;
+    margin: 0px;
+}
+
+}
