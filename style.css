@@ -1,18 +1,17 @@
 body{
     font-family: "raleway", sans-serif;
-    align-content: center;
-    margin: 0px;
+    margin: 0 auto; 
 }
 
 /*header*/
 header{
+    max-width: 1400px;
     margin: 0 auto;
-    max-width: 1300px;
     align-items: center;
 }
 h1{
     font-size: 24px;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 5px 0;
 }
 
 h3{
@@ -30,17 +29,18 @@ p{
     font-weight: 500;
 }
 nav{
+    max-width: 1400px;
+    width: 95%;
     height: 110px;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 auto;
 }
 
 nav img{
     height: 40px;
     padding-top: 60px;
 }
-
 
 #liens_en_tete{
     width: 270px;
@@ -56,13 +56,17 @@ nav img{
     border-top: 1px solid transparent;
 }
 
-
 #liens_en_tete a:hover{
     border-top: 1px solid #0065FC;
     color: #0065FC;
 }
 
 /*main*/
+main{
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
 .en_plein_centre{
     font-size: 16px;
     margin: 0 0 20px 0;
@@ -107,6 +111,9 @@ form{
     background: #DEEBFF;
     color: blue;
 }
+#rechercher svg{
+    display: none;
+}
 
 /*filtres*/
 
@@ -131,7 +138,6 @@ form{
     border-radius: 25px;
     border-left: none;
 }
-
 
 .background_filtres{
     display: flex;
@@ -186,15 +192,16 @@ form{
 
 #section_cards{
     display: flex;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
 }
-
 
 #container_cards_gauche h3{
     margin: 0px;
 }
 
 #cards_gauche{
-    width: 850px;
     background: #F2F2F2;
     margin-right: 20px;
     border-radius: 20px;
@@ -246,26 +253,23 @@ form{
     height: 15px;
 }
 
-
 #afficher_plus{
     margin: 0 0 30px 30px;
     font-weight: 700;
     font-size: 16px;
 }
 
-
 /*aside*/
 
 aside{
     background: #F2F2F2;
     border-radius: 20px;
-    width: 410px;
     height: 610px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0 0 20px;
-    min-width: 350px;
+    min-width: 375px;
 }
 
 #entete{
@@ -336,27 +340,32 @@ aside{
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
 }
 
 #titre_carte_basse{
+    max-width: 1400px;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 #cartes_basse{
-    width: 1300px;
+    width: 100%;
+    max-width: 1400px;
     height: auto;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    margin-bottom: 50px;
 }
-
 
 #cartes_basse h3{
     margin: 20px;
     font-weight: 800;
 }
-
 
 #vieux_port{
     height: 440px;
@@ -398,7 +407,7 @@ aside{
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
     transition: 1s;
-    }
+}
 
 #paumegues img{
     width: 280px;
@@ -420,7 +429,7 @@ aside{
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
     transition: 1s;
-    }
+}
 
 #iles_du_frioul img{
     width: 280px;
@@ -442,7 +451,7 @@ aside{
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
     transition: 1s;
-    }
+}
 
 #calanques img{
     width: 300px;
@@ -470,7 +479,7 @@ aside{
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
     transition: 1s;
-    }
+}
 
 #notre-dame img{
     width: 280px;
@@ -492,7 +501,7 @@ aside{
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
     transition: 1s;
-    }
+}
 
 #parc-longchamp img{
     width: 280px;
@@ -505,17 +514,19 @@ aside{
 /*footer*/
 
 footer{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
     background: #F2F2F2;
-    height: auto;
+}
+#container_footer{
+    max-width: 1400px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 20px 0 50px 0;
 }
 
 .lien_footer{
     width: 25%;
-    margin: 50px;
     line-height: 1.5;
 }
 
@@ -527,13 +538,20 @@ footer li{
     list-style: none;
 }
 
+footer li :hover{
+    color: #0065FC;
+    font-size: 120%;
+    transition: 300ms;
+}
+
 /*media Queries*/
 
 @media screen and (max-width: 768px) {
 header{
-        width: 375px;
-        margin: 0 auto;
-        text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
 }
 
 nav{
@@ -549,6 +567,7 @@ nav img{
 }
 
 #liens_en_tete a{
+    text-align: center;
         margin: 0px;
         height: 30px;
         width: 50%;
@@ -562,6 +581,12 @@ nav img{
         border-top: none;
         border-bottom: 1px solid #0065FC;
 }
+h1{
+    text-align: start;
+}
+p{
+    text-align: start;
+}
 main{
     width: 340px;
     margin: auto;
@@ -571,9 +596,17 @@ main{
 }
 #rechercher{
     margin: auto;
-    width: 48px;
+    width: 55px;
     border-radius: 15px;
 }
+
+#rechercher span{
+    display: none;
+}
+#rechercher svg{
+    display: block;
+}
+
 #filtres{
     flex-wrap: wrap;
     text-align: start;
@@ -583,12 +616,15 @@ main{
 }
 #filtres h3{
     width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
 }
 .filtres{
     margin-bottom: 10px;
 }
 #information{
     text-align: start;
+    margin-left: 0px;
 }
 #information img{
     margin-bottom: 20px;
@@ -596,6 +632,7 @@ main{
 
 #section_cards{
     flex-direction: column-reverse;
+    align-items: center;
 }
 #cards_gauche{
     background: none;
@@ -604,10 +641,12 @@ main{
 }
 #cards_gauche h2{
     width: 100%;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 30px;
+    text-align: start;
 }
 .card{
     width: 314px;
+    margin-bottom: 15px;
 }
 .card_image{
     width: 315px;
@@ -620,11 +659,18 @@ aside{
     margin: 0px;
     border-radius: 0px;
 }
+#entete{
+    width: 86%;
+}
+#entete svg{
+    margin: 0px;
+}
 .card_corp_droit{
     text-align: start;
 }
 #afficher_plus{
     text-align: start;
+    margin-top: 20px;
 }
 
 #titre_carte_basse h2{
@@ -634,9 +680,8 @@ aside{
 
 #cartes_basse{
     display: block;
-    margin: 10px;
+    margin: 15px;
 }
-
 
 .card:hover{
     -ms-transform: none; /* IE 9 */
@@ -657,49 +702,48 @@ aside{
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
+}
 
 #paumegues:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
-
+}
 
 #iles_du_frioul:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
+}
 
 #calanques:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
-
+}
 
 #notre-dame:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
+}
 
 #parc-longchamp:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
     transform: none;
     transition: none;
-    }
+}
 #vieux_port{
     height: 200px;
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #vieux_port img{
@@ -707,15 +751,13 @@ aside{
     height: 140px;
 }
 
-#frioul_paumergues {
-    height: 410px;
-}
 
 #paumegues{
     height: 200px;
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #paumegues img{
@@ -728,6 +770,7 @@ aside{
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #iles_du_frioul img{
@@ -740,6 +783,7 @@ aside{
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #calanques img{
@@ -752,6 +796,7 @@ aside{
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #notre-dame img{
@@ -764,6 +809,7 @@ aside{
     text-align: start;
     margin: 10px;
     align-content: center;
+    margin: 10px 10px 20px 10px;
 }
 
 #parc-longchamp img{
@@ -771,14 +817,17 @@ aside{
     height: 140px;
 }
 
-footer{
-    display: block;
-    padding: 20px;
+#container_footer{
+    flex-direction: column;
 }
 
 .lien_footer{
     width: 100%;
-    margin: 0px;
 }
+
+}
+
+@media screen and (max-width: 992px){
+
 
 }
