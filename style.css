@@ -1,6 +1,7 @@
 body{
     font-family: "raleway", sans-serif;
-    margin: 0 auto; 
+    margin: 0px;
+    padding: 0px;
 }
 
 /*header*/
@@ -183,6 +184,12 @@ form{
 }
 
 /*cards*/
+#section_cards{
+    width: 97%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
 
 #container_cards_gauche{
     display: flex;
@@ -190,30 +197,25 @@ form{
     justify-content: space-evenly;
 }
 
-#section_cards{
-    display: flex;
-    max-width: 1400px;
-    width: 95%;
-    margin: 0 auto;
-}
 
 #container_cards_gauche h3{
     margin: 0px;
 }
 
 #cards_gauche{
+    width: 67%;
     background: #F2F2F2;
-    margin-right: 20px;
     border-radius: 20px;
 }
 
 #cards_gauche h2{
+    width: 90%;
     margin: 45px 0 20px 30px;
     font-size: 21px;
 }
 
 .card{
-    width: 240px;
+    width: 29%;
     height: 195px;
     background: white;
     border-radius: 20px;
@@ -230,7 +232,7 @@ form{
     }
 
 .card_image{
-    width: 240px;
+    width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -239,7 +241,7 @@ form{
 .card_corp{
     display: flex;
     flex-direction: column;
-    margin: 10px 0 1px 15px;
+    margin: 0 0 5px 5px;
     line-height: 1.4;
 }
 
@@ -268,8 +270,7 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 0 20px;
-    min-width: 375px;
+    width: 30%;
 }
 
 #entete{
@@ -294,7 +295,7 @@ aside{
 }
 
 .card_droit{
-    width: 320px;
+    width: 85%;
     height: 140px;
     display: flex;    
     background: white;
@@ -322,6 +323,9 @@ aside{
 
 .card_corp_droit{
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card_corp_droit h3{
@@ -329,11 +333,11 @@ aside{
 }
 
 .card_corp_droit p{
-    margin: 10px 0 10px 0;
+    margin: 0;
 }
 
 .card_corp_droit img{
-    margin: 30px 0 0 0;
+    align-items: flex-end;
 }
 /*activites a marseille*/
 #container_carte_basse{
@@ -368,6 +372,7 @@ aside{
 }
 
 #vieux_port{
+    width: 22%;
     height: 440px;
     background: white;
     border-radius: 20px;
@@ -384,13 +389,14 @@ aside{
 
 
 #vieux_port img{
-    width: 280px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 #frioul_paumergues{
+    width: 22%;
     height: 440px;
 }
 
@@ -410,7 +416,7 @@ aside{
 }
 
 #paumegues img{
-    width: 280px;
+    width: 100%;
     height: 170px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -432,7 +438,7 @@ aside{
 }
 
 #iles_du_frioul img{
-    width: 280px;
+    width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -440,6 +446,7 @@ aside{
 }
 
 #calanques{
+    width: 22%;
     height: 440px;
     background: white;
     border-radius: 20px;
@@ -454,7 +461,7 @@ aside{
 }
 
 #calanques img{
-    width: 300px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -462,6 +469,7 @@ aside{
 }
 
 #Notre-dame_parc-longchamp{
+    width: 22%;
     height: 440px;
 }
 
@@ -482,7 +490,7 @@ aside{
 }
 
 #notre-dame img{
-    width: 280px;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -504,7 +512,7 @@ aside{
 }
 
 #parc-longchamp img{
-    width: 280px;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -546,7 +554,43 @@ footer li :hover{
 
 /*media Queries*/
 
+@media screen and (max-width: 992px){
+
+    nav img {
+        padding-top: 35px;
+    }    
+    #section_cards{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #cards_gauche{
+        width: 100%;
+        border-radius: 0px;
+        background: white;
+    }
+    .card_droit{
+        width: 95%;
+    }
+    #entete{
+        display: flex;
+        justify-content: start;
+        width: 95%;
+    }
+    aside{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 0px;
+    }
+    #filtres{
+        width: 95%;
+    }
+    
+    
+    }
+
 @media screen and (max-width: 768px) {
+
 header{
     width: 100%;
     margin: 0 auto;
@@ -583,13 +627,13 @@ nav img{
 }
 h1{
     text-align: start;
+    margin-top: 40px;
 }
 p{
     text-align: start;
 }
 main{
-    width: 340px;
-    margin: auto;
+    width: 95%;
 }
 #marseille_france{
     padding: 0 0 0 15px;
@@ -641,26 +685,27 @@ main{
 }
 #cards_gauche h2{
     width: 100%;
-    margin: 20px 0 20px 30px;
+    margin: 20px 0 20px 10px;
     text-align: start;
 }
 .card{
-    width: 314px;
+    width: 95%;
     margin-bottom: 15px;
+    padding: 0px;
 }
 .card_image{
-    width: 315px;
+    width: 100%;
 }
 .card_corp{
     text-align: start;
 }
 aside{
-    width: auto;
     margin: 0px;
     border-radius: 0px;
 }
 #entete{
-    width: 86%;
+    width: 95%;
+    justify-content: space-between;
 }
 #entete svg{
     margin: 0px;
@@ -671,18 +716,21 @@ aside{
 #afficher_plus{
     text-align: start;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 #titre_carte_basse h2{
     text-align: start;
-    margin-left: 20px;
 }
 
 #cartes_basse{
     display: block;
-    margin: 15px;
+    margin: 0;
 }
-
+#cartes_basse h3{
+    margin: 0px;
+    padding: 15px;
+}
 .card:hover{
     -ms-transform: none; /* IE 9 */
     -webkit-transform: none; /* Safari 3-8 */
@@ -739,81 +787,72 @@ aside{
     transition: none;
 }
 #vieux_port{
-    height: 200px;
+    height: auto;
     text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #vieux_port img{
-    width: 100%;
     height: 140px;
 }
-
-
+#frioul_paumergues{
+    height: auto;
+    text-align: start;
+    width: 100%;
+}
 #paumegues{
-    height: 200px;
-    text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    height: auto;
+    margin-bottom: 20px;
 }
-
 #paumegues img{
-    width: 100%;
     height: 140px;
 }
-
 #iles_du_frioul{
-    height: 200px;
-    text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 #iles_du_frioul img{
-    width: 100%;
     height: 140px;
 }
 
 #calanques{
-    height: 200px;
+    height: auto;
     text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #calanques img{
-    width: 100%;
     height: 140px;
 }
 
-#notre-dame{
-    height: 200px;
+#Notre-dame_parc-longchamp{
+    height: auto;
     text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    width: 100%;
+}
+
+#notre-dame{
+    height: auto;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #notre-dame img{
-    width: 100%;
     height: 140px;
 }
 
 #parc-longchamp{
-    height: 200px;
+    height: auto;
     text-align: start;
-    margin: 10px;
-    align-content: center;
-    margin: 10px 10px 20px 10px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #parc-longchamp img{
-    width: 100%;
     height: 140px;
 }
 
@@ -824,10 +863,5 @@ aside{
 .lien_footer{
     width: 100%;
 }
-
-}
-
-@media screen and (max-width: 992px){
-
 
 }
